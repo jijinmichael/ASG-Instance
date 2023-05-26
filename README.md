@@ -1,4 +1,4 @@
-# Reboot an instance which is created by Auto Scaling Group
+### Reboot an instance which is created by Auto Scaling Group
 
 When an instance is manually rebooted within the ASG, the ASG may still view the instance as unhealthy since services were interrupted. Similar to the automatic procedure outlined above, the ASG may be prompted by this to end the current instance and start a new one.
 
