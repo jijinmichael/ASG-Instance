@@ -54,7 +54,7 @@ You can see an activity history as follows.
 
 To summarize, detaching an instance permanently removes it from the Auto Scaling group, while placing an instance in standby temporarily removes it from the group but retains its association for easy reactivation.
 
-# How to attach an Instance which is created already in AWS to an ASG 
+### How to attach an Instance which is created already in AWS to an ASG 
 
 1. Create an AMI of the desired Instance.
 2. Create Launch Configuration. 
