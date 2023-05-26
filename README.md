@@ -47,5 +47,7 @@ You can see an activity history as follows.
 
 To summarize, detaching an instance permanently removes it from the Auto Scaling group, while placing an instance in standby temporarily removes it from the group but retains its association for easy reactivation.
 
-# Attach EC2 instances to your Auto Scaling group
+# 
+
+
 
