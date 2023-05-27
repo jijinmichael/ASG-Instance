@@ -5,8 +5,8 @@ When an instance is manually rebooted within the ASG, the ASG may still view the
 Here's what typically happens:
 
 1. **Reboot**: When you initiate a reboot for an instance, the operating system gracefully shuts down and restarts, which may take a few minutes. During this time, the instance becomes temporarily unavailable.
-2. *Replacement*: The Auto Scaling Group identifies that the instance is no longer in a healthy state (as it was temporarily unavailable) and terminates it.
-3. *New instance creation*: The Auto Scaling Group immediately launches a new instance to replace the terminated one. The new instance is created using the same launch configuration or template specified in the Auto Scaling Group.
+2. **Replacement**: The Auto Scaling Group identifies that the instance is no longer in a healthy state (as it was temporarily unavailable) and terminates it.
+3. **New instance creation**: The Auto Scaling Group immediately launches a new instance to replace the terminated one. The new instance is created using the same launch configuration or template specified in the Auto Scaling Group.
 
 To avoid disruptions caused by reboots, you can take the following measures:
 
@@ -19,11 +19,11 @@ Detaching an instance refers to removing it from an Auto Scaling group. When you
 
 An ASG won't automatically replace a restarted instance if you detach an instance from it and subsequently reattach it. In this case, the following is usually what occurs:
 
-1.Detachment: When you detach an instance from an ASG, the ASG no longer manages that instance. The instance is essentially removed from the ASG's control and becomes a standalone instance.
+1.**Detachment**: When you detach an instance from an ASG, the ASG no longer manages that instance. The instance is essentially removed from the ASG's control and becomes a standalone instance.
 
-2.Reboot: Once you initiate a reboot for the detached instance, it goes through the usual reboot process. The operating system gracefully shuts down and restarts.
+2.**Reboot**: Once you initiate a reboot for the detached instance, it goes through the usual reboot process. The operating system gracefully shuts down and restarts.
 
-3.Replacement: Since the instance is no longer part of the ASG, the ASG does not actively monitor it or replace it. Therefore, no automatic replacement occurs when the instance is rebooted. The detached instance will remain as an individual, separate instance.
+3.**Replacement**: Since the instance is no longer part of the ASG, the ASG does not actively monitor it or replace it. Therefore, no automatic replacement occurs when the instance is rebooted. The detached instance will remain as an individual, separate instance.
 
 Please note that while detaching, please uncheck Replace Instance option and please make sure that the minimum group size value must be equal to 0(Zero).
 
@@ -42,9 +42,9 @@ Standby instances are useful in situations such as performing maintenance on ins
 
 When you make an instance standby from an Auto Scaling Group (ASG) and then reboot it, the following actions typically occur:
 
-1. Standby state: When you mark an instance as standby in an ASG, the instance is removed from the load balancer or target group that the ASG is associated with. The instance is no longer considered in the ASG's scaling activities. However, the instance remains registered with the ASG and retains its instance ID.
+1. **Standby state**: When you mark an instance as standby in an ASG, the instance is removed from the load balancer or target group that the ASG is associated with. The instance is no longer considered in the ASG's scaling activities. However, the instance remains registered with the ASG and retains its instance ID.
 
-2. Reboot: Rebooting the instance while it's in standby state is similar to a regular reboot. The instance is restarted, and any processes or services running on the instance are temporarily halted and then resumed once the reboot is complete. The instance retains its IP address, storage volumes, and other configuration settings.
+2. **Reboot**: Rebooting the instance while it's in standby state is similar to a regular reboot. The instance is restarted, and any processes or services running on the instance are temporarily halted and then resumed once the reboot is complete. The instance retains its IP address, storage volumes, and other configuration settings.
 
 Like detach, to make the instance standby, please uncheck Replace Instance option.
 ![image](https://github.com/jijinmichael/ASG-Instance-Management/assets/134680540/0a651a32-3a0c-44b1-9db3-25f86edecf53)
