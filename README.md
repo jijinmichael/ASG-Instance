@@ -10,8 +10,8 @@ Here's what typically happens:
 
 To avoid disruptions caused by reboots, you can take the following measures:
 
-## 1. Detach and Reboot
-## 2. Standby and Reboot
+### 1. Detach and Reboot
+### 2. Standby and Reboot
 
 ### Detach and Reboot
 
