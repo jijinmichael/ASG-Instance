@@ -4,9 +4,9 @@ When an instance is manually rebooted within the ASG, the ASG may still view the
 
 Here's what typically happens:
 
-1. Reboot: When you initiate a reboot for an instance, the operating system gracefully shuts down and restarts, which may take a few minutes. During this time, the instance becomes temporarily unavailable.
-2. Replacement: The Auto Scaling Group identifies that the instance is no longer in a healthy state (as it was temporarily unavailable) and terminates it.
-3. New instance creation: The Auto Scaling Group immediately launches a new instance to replace the terminated one. The new instance is created using the same launch configuration or template specified in the Auto Scaling Group.
+1. *Reboot*: When you initiate a reboot for an instance, the operating system gracefully shuts down and restarts, which may take a few minutes. During this time, the instance becomes temporarily unavailable.
+2. *Replacement*: The Auto Scaling Group identifies that the instance is no longer in a healthy state (as it was temporarily unavailable) and terminates it.
+3. *New instance creation*: The Auto Scaling Group immediately launches a new instance to replace the terminated one. The new instance is created using the same launch configuration or template specified in the Auto Scaling Group.
 
 To avoid disruptions caused by reboots, you can take the following measures:
 
