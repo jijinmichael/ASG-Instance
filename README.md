@@ -19,7 +19,7 @@ Detaching an instance refers to removing it from an Auto Scaling group. When you
 
 An ASG won't automatically replace a restarted instance if you detach an instance from it and subsequently reattach it. In this case, the following is usually what occurs:
 
-1.Detachment: When you detach an instance from an ASG, the ASG no longer manages that instance. The instance is essentially removed from the ASG's control and becomes a standalone instance.
+1. #### Detachment: When you detach an instance from an ASG, the ASG no longer manages that instance. The instance is essentially removed from the ASG's control and becomes a standalone instance.
 
 2.Reboot: Once you initiate a reboot for the detached instance, it goes through the usual reboot process. The operating system gracefully shuts down and restarts.
 
