@@ -14,7 +14,7 @@ To avoid disruptions caused by reboots, you can take the following measures:
 ### 2. Standby and Reboot
 
 ### Detach and Reboot
-
+---
 Detaching an instance refers to removing it from an Auto Scaling group. When you detach an instance, it is no longer managed by the Auto Scaling group, and it continues to run independently. Detaching can be useful in scenarios where you want to take manual control over an instance or perform specific actions that are not handled by the Auto Scaling group.
 
 An ASG won't automatically replace a restarted instance if you detach an instance from it and subsequently reattach it. In this case, the following is usually what occurs:
@@ -35,7 +35,7 @@ You can see an activity history as follows.
 ![WhatsApp Image 2023-05-24 at 18 03 48 (1)](https://github.com/jijinmichael/ASG-Instance-Management/assets/134680540/5d9a8eb1-3459-44bc-8e94-eb805262b753)
 
 ### Standby and Reboot
-
+---
 Placing an instance in standby means that it is temporarily removed from the Auto Scaling group's active capacity but remains associated with the group. The instance is not terminated but is prevented from receiving traffic or participating in scaling activities. Standby instances can be a part of the Auto Scaling group again when needed, without launching new instances.
 
 Standby instances are useful in situations such as performing maintenance on instances, troubleshooting, or applying updates. By putting an instance in standby, you can ensure that it doesn't receive traffic during such activities while still keeping it as a part of the group for future use.
